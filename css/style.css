@@ -1,0 +1,232 @@
+body{
+    background-image:url("../image/osotes.png");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+    overflow-x: hidden;
+}
+.container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    box-shadow: 0 8px 15px rgba(110, 194, 223, 0.3);
+    padding: 1.5rem;
+    background-color: lightblue;
+    border-radius: 24px;
+    border: 3px solid rgb(110, 194, 223);
+    color: white;
+}
+p{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 1.8rem;
+    background-color: rgba(184, 116, 190, 0.986);
+    border-radius: 30px;
+    border: 5px solid #81578d;
+    color: white;
+}
+.parrafo:hover{
+    transform: scale(1.05);
+    background-color: rgba(184, 116, 190, 0.986);
+    box-shadow: 0 15px 35px rgba(65, 15, 70, 0.986);
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.4s ease, box-shadow 0.4s ease;
+}
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    box-shadow: 0 8px 15px rgba(110, 194, 223, 0.3);
+    padding: 1.5rem;
+    background-color: lightblue;
+    border-radius: 24px;
+    border: 3px solid rgb(110, 194, 223);
+    color: white;
+}
+.header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: black; 
+    text-shadow: 0 0 10px rgba(159, 124, 224, 0.5);
+}
+.titulo:hover {
+    transform: scale(1.05);
+    background-color: rgb(110, 194, 223);
+    box-shadow: 0 15px 35px rgb(110, 194, 223);
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.tarjeta{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.tarjeta h2 {
+    font-size: 2.5rem;
+    color: black; 
+    text-shadow: 0 0 10px rgba(159, 124, 224, 0.5);
+}
+.tarjeta {
+    background: lightblue;
+    border-radius: 10px;
+    padding: 40px 20px;
+    border: 5px solid rgb(110, 194, 223);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.4s ease, box-shadow 0.4s ease;
+}
+.tarjeta:hover {
+    transform: scale(1.05);
+    background-color: rgb(110, 194, 223);
+    box-shadow: 0 15px 35px rgb(110, 194, 223);
+}
+
+.btn-principal {
+    padding: 10px 20px;
+    border: 5px solid #000000;
+    background: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #ddd;
+    transition: background-color 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.btn-principal:hover {
+    background-color: #4e0808;
+    transform: translateY(-5px);
+}
+
+.panel-animaciones {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.btn-principal {
+    padding: 10px 20px;
+    border: 5px solid white;
+    background: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #ddd;
+    transition: background-color 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.btn-principal:hover {
+    background-color: #4e0808;
+    transform: translateY(-5px);
+}
+
+.panel-animaciones {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.caja {
+    width: 100px;
+    height: 50px;
+    background: rgba(159, 124, 224, 0.5);
+    border: 2px solid #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.caja1 {
+    transition: transform 8s linear;
+}
+
+.caja2 {
+    transition: transform 8s linear;
+}
+
+.caja3 {
+    transition: transform 8s linear;
+}
+
+.panel-animaciones:hover .caja {
+    transform: translateX(450px);
+}
+
+
+.boton{
+    width: fit-content;
+    background-color: rgba(177, 25, 207, 0.5);
+    padding: 15xp 30xp;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.boton:hover { 
+    background-color: palevioletred;
+    box-shadow: 5px 5px;
+    color: black;
+    transform: scale(1.05);
+}
+.icon{
+    display: inline-block;
+    animation: spinner;
+}
+.boton:hover .icon{
+    animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.botonn{
+    width: fit-content;
+    background-color: rgba(127, 81, 214, 0.5);
+    padding: 15xp 30xp;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+.botonn:hover{
+    background-color: palevioletred;
+    box-shadow: 5px 5px;
+    color: black;
+    animation: translatex 1s linear infinite;
+}
+
+@keyframes translatex{
+    from{
+        transform: translate(0);
+    }
+    to {
+        transform: translate(50px);
+    }
+}
+
+
